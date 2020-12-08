@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.coremedia.blueprint.feedbackhub</groupId>
+  <artifactId>studio-client.feedback-hub-adapter-imagga</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>swc</packaging>
+  <description>Studio Plugin for the Feedback Hub's imagga Adapter</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <jangaroo.version>4.0.74</jangaroo.version>
+    <studio-client.version>1-SNAPSHOT</studio-client.version>
+    <!-- mvn jangaroo:run configuration: -->
+    <!-- Proxy everything to a running Studio (except the locally developed package) -->
+    <jooProxyPathSpec>/*</jooProxyPathSpec>
+    <!-- Default is a locally started Studio, but usually, you will want to set a central
+         development installation.host where Studio is already running (see profile below) -->
+    <jooProxyTargetUri>http://localhost:41080</jooProxyTargetUri>
+  </properties>
+
+  <organization>
+    <name>Blueprint</name>
+  </organization>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.coremedia.cms</groupId>
+        <artifactId>studio-client-core-bom</artifactId>
+        <version>${studio-client.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.coremedia.cms</groupId>
+        <artifactId>studio-client-thirdparty-bom</artifactId>
+        <version>${studio-client.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>ui-components</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>feedback-hub-editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>ext-as</artifactId>
+      <type>swc</type>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/main/joo</sourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.feedbackhub.imagga</uri>
+            </namespace>
+          </namespaces>
+          <jooProxyPathSpec>${jooProxyPathSpec}</jooProxyPathSpec>
+          <jooProxyTargetUri>${jooProxyTargetUri}</jooProxyTargetUri>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>package-plugin</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>remote-studio-server</id>
+      <!--
+       | This profile will be activated if you set -Dinstallation.host=<FQDN> on your command-line. The jangaroo-plugin
+       | proxy servlet will then route all requests to the defined remote studio rest service
+       | (except these for your local package(s)) and automatically add your local package(s) to the
+       | dynamic-packages.json from that remote location, so that your Studio Client Plugin will be loaded.
+       -->
+      <activation>
+        <property>
+          <name>installation.host</name>
+        </property>
+      </activation>
+      <properties>
+        <jooProxyTargetUri>https://studio.${installation.host}</jooProxyTargetUri>
+      </properties>
+    </profile>
+  </profiles>
+</project>
