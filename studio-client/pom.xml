@@ -13,7 +13,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <jangaroo.version>4.0.74</jangaroo.version>
-    <studio-client.version>1-SNAPSHOT</studio-client.version>
+    <cms.version>1-SNAPSHOT</cms.version>
     <!-- mvn jangaroo:run configuration: -->
     <!-- Proxy everything to a running Studio (except the locally developed package) -->
     <jooProxyPathSpec>/*</jooProxyPathSpec>
@@ -22,23 +22,19 @@
     <jooProxyTargetUri>http://localhost:41080</jooProxyTargetUri>
   </properties>
 
-  <organization>
-    <name>Blueprint</name>
-  </organization>
-
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>com.coremedia.cms</groupId>
         <artifactId>studio-client-core-bom</artifactId>
-        <version>${studio-client.version}</version>
+        <version>${cms.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.coremedia.cms</groupId>
         <artifactId>studio-client-thirdparty-bom</artifactId>
-        <version>${studio-client.version}</version>
+        <version>${cms.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
