@@ -12,7 +12,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jangaroo.version>4.0.74</jangaroo.version>
+    <jangaroo.version>4.0.75</jangaroo.version>
     <cms.version>1-SNAPSHOT</cms.version>
     <!-- mvn jangaroo:run configuration: -->
     <!-- Proxy everything to a running Studio (except the locally developed package) -->
@@ -46,18 +46,21 @@
       <groupId>com.coremedia.ui.toolkit</groupId>
       <artifactId>ui-components</artifactId>
       <type>swc</type>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>com.coremedia.ui.sdk</groupId>
       <artifactId>editor-components</artifactId>
       <type>swc</type>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>com.coremedia.ui.sdk</groupId>
       <artifactId>feedback-hub-editor-components</artifactId>
       <type>swc</type>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
