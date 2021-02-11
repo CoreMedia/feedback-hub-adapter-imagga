@@ -6,12 +6,12 @@
         xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
   <fx:Metadata>
     [ResourceBundle('com.coremedia.cms.studio.feedbackhub.FeedbackHub')]
-    [ResourceBundle('com.coremedia.blueprint.studio.feedbackhub.imagga.FeedbackHubImagga')]
+    [ResourceBundle('com.coremedia.labs.plugins.feedbackhub.imagga.FeedbackHubImagga')]
   </fx:Metadata>
   <fx:Script><![CDATA[
     import mx.resources.ResourceManager;
 
-    public static const xtype:String = "com.coremedia.blueprint.studio.feedbackhub.imagga.config.imaggaFeedbackHubStudioPlugin";
+    public static const xtype:String = "com.coremedia.labs.plugins.feedbackhub.imagga.config.imaggaFeedbackHubStudioPlugin";
 
     public native function ImaggaFeedbackHubStudioPlugin(config:ImaggaFeedbackHubStudioPlugin = null);
     ]]></fx:Script>
@@ -19,7 +19,7 @@
   <editor:configuration>
     <editor:CopyResourceBundleProperties
             destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.studio.feedbackhub.FeedbackHub')}"
-            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.feedbackhub.imagga.FeedbackHubImagga')}"/>
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.labs.plugins.feedbackhub.imagga.FeedbackHubImagga')}"/>
   </editor:configuration>
 
 

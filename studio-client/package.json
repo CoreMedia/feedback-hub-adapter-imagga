@@ -1,7 +1,7 @@
 {
   "studioPlugins": [
     {
-      "mainClass": "com.coremedia.blueprint.studio.feedbackhub.imagga.ImaggaFeedbackHubStudioPlugin",
+      "mainClass": "com.coremedia.labs.plugins.feedbackhub.imagga.ImaggaFeedbackHubStudioPlugin",
       "name": "FeedbackHub for Imagga"
     }
   ]

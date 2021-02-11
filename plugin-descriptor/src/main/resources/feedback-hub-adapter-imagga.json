@@ -1,0 +1,19 @@
+{
+  "$schema": "https://releases-internal.coremedia.com/plugins/plugin-schema-1.0.0.json",
+  "plugins": {
+    "studio-server": {
+      "maven": {
+        "groupId": "com.coremedia.labs.plugins",
+        "artifactId": "studio-server.feedback-hub-adapter-imagga",
+        "version": "${project.version}"
+      }
+    },
+    "studio-client": {
+      "maven": {
+        "groupId": "com.coremedia.labs.plugins",
+        "artifactId": "studio-client.feedback-hub-adapter-imagga",
+        "version": "${project.version}"
+      }
+    }
+  }
+}

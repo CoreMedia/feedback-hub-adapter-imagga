@@ -1,4 +1,4 @@
-package com.coremedia.blueprint.feedbackhub.imagga;
+package com.coremedia.labs.plugins.feedbackhub.imagga;
 
 import com.coremedia.feedbackhub.adapter.Blob;
 import com.coremedia.feedbackhub.adapter.FeedbackContext;

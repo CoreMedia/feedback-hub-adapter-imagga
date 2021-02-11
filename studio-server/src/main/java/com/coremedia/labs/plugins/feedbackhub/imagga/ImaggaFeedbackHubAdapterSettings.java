@@ -1,4 +1,4 @@
-package com.coremedia.blueprint.feedbackhub.imagga;
+package com.coremedia.labs.plugins.feedbackhub.imagga;
 
 import edu.umd.cs.findbugs.annotations.Nullable;
 
