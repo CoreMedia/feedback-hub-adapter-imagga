@@ -1,0 +1,10 @@
+
+Lists of 8 third-party dependencies.
+     (GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1) SpotBugs Annotations (com.github.spotbugs:spotbugs-annotations:3.1.5 - https://spotbugs.github.io/)
+     (The Apache Software License, Version 2.0) Gson (com.google.code.gson:gson:2.3.1 - http://code.google.com/p/google-gson/)
+     (Unknown license) ext-as (net.jangaroo:ext-as:7.2.0-3 - http://nexus.sonatype.org/oss-repository-hosting.html/ext-as)
+     (Apache License, Version 2.0) AssertJ fluent assertions (org.assertj:assertj-core:3.15.0 - http://assertj.org/assertj-core)
+     (Eclipse Public License v2.0) JUnit Jupiter API (org.junit.jupiter:junit-jupiter-api:5.6.1 - https://junit.org/junit5/)
+     (The MIT License) mockito-core (org.mockito:mockito-core:3.1.0 - https://github.com/mockito/mockito)
+     (MIT License) SLF4J API Module (org.slf4j:slf4j-api:1.7.30 - http://www.slf4j.org)
+     (Apache License, Version 2.0) Spring Context (org.springframework:spring-context:5.2.13.RELEASE - https://github.com/spring-projects/spring-framework)

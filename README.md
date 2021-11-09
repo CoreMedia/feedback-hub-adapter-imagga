@@ -1,7 +1,7 @@
 ![CoreMedia Labs Logo](https://documentation.coremedia.com/badges/banner_coremedia_labs_wide.png "CoreMedia Labs Logo")
 
-![CoreMedia Content Cloud Version](https://img.shields.io/static/v1?message=2104&label=CoreMedia%20Content%20Cloud&style=for-the-badge&labelColor=666666&color=672779 
-"This badge shows the CoreMedia version this project is compatible with. 
+![CoreMedia Content Cloud Version](https://img.shields.io/static/v1?message=2110&label=CoreMedia%20Content%20Cloud&style=for-the-badge&labelColor=666666&color=672779 
+"This badge shows the CoreMedia version(s) this project is compatible with. 
 Please read the versioning section of the project to see what other CoreMedia versions are supported and how to find them."
 )
 ![Status](https://img.shields.io/static/v1?message=active&label=Status&style=for-the-badge&labelColor=666666&color=2FAC66 
@@ -10,25 +10,36 @@ If a project is inactive it means that the development has been discontinued and
 )
 
 
-# Imagga Adapter for Feedback Hub 
-
-## Overview 
+# Feedback Hub Adapter for Imagga 
 
 This is an integration image recognition platform __Imagga__ (https://www.imagga.com/).
-
-The Feedback Hub Adapter 'Imagga' is implemented as a Blueprint extension.
 
 We usually only work on the latest CoreMedia version, so the latest version of the documentation and demo content 
 may be on the latest version branch.
 
 ## Versioning
 
-To find out which CoreMedia version is supported by this project, 
-please take look at the releases section or on the existing branches. 
+The master branch of this project is suitable for CoreMedia versions since 2107.
+It is based on the plugin architecture.
 
-#### Issue Tracker
+For older CoreMedia versions there are branches with corresponding names.
+For example, if your CoreMedia version is 2107.2, checkout the branch cmcc-10-2107.2-<LATEST>.
+These older versions are based on the extensions architecture, because plugins
+are available only since 2101.
 
-https://github.com/CoreMedia/feedback-hub-adapter-imagga/issues
+## Documentation & Tutorial
+
+* **[Documentation](docs/README.md)**
+
+    for guides for editors, administrators and developers    
+
+* **[Changelog](CHANGELOG.md)**
+
+    for recent changes
+
+* **[Issues](https://github.com/CoreMedia/feedback-hub-adapter-imagga/issues)**
+
+    for known bugs and feature requests
 
 ## CoreMedia Labs
 
@@ -39,7 +50,7 @@ CoreMedia. Whatever your experience level with CoreMedia is, we've got something
 for you.
 
 Each project in our Labs platform is an extra feature to be used with CoreMedia,
-including extensions, plugins, tools and 3rd party integrations. We provide some test
+including plugins, extensions, tools and 3rd party integrations. We provide some test
 data and explanatory videos for non-customers and for insiders there is
 open-source code and instructions on integrating the feature into your
 CoreMedia workspace. 
@@ -49,3 +60,4 @@ that could be used to enhance your CoreMedia experience. We'd love to hear your
 feedback on use-cases and further developments! If you're having problems with
 our code, please refer to our issues section. If you already have a solution to 
 an issue, we love to review and integrate your pull requests. 
+
