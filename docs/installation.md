@@ -32,12 +32,12 @@ Continue with [Activate the plugin](#activate-the-plugin).
 
 ## Download Release
 
-Go to [Release](https://github.com/CoreMedia/content-hub-adapter-filesystem/releases) and download the version that matches your CMCC release version.
+Go to [Release](https://github.com/CoreMedia/feedback-hub-adapter-imagga/releases) and download the version that matches your CMCC release version.
 The ZIP file provides the Maven workspace of the plugin.
 
 ## Activate the Plugin
 
-The filesystem contenthub adapter is a plugin for studio-server and studio-client.
+The imagga feedbackhub adapter is a plugin for studio-server and studio-client.
 The deployment of plugins is described [here](https://documentation.coremedia.com/cmcc-10/artifacts/2101/webhelp/coremedia-en/content/ApplicationPlugins.html).
 
 In short, for a quick development roundtrip: 

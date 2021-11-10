@@ -5,7 +5,7 @@
       "file": "studio-server/target/studio-server.feedback-hub-adapter-imagga-${VERSION}.zip"
     },
     "studio-client.main": {
-      "file": "studio-client/apps/main/feedback-hub-adapter-filesystem/build/plugin/studio-client.main.feedback-hub-adapter-imagga-${VERSION}.zip"
+      "file": "studio-client/apps/main/feedback-hub-adapter-imagga/build/plugin/studio-client.main.feedback-hub-adapter-imagga-${VERSION}.zip"
     }
   }
 }

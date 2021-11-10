@@ -1,4 +1,4 @@
-# The content-hub-adapter-filesystem Plugin Manual
+# The feedback-hub-adapter-imagga Plugin Manual
 
 ## Table of Contents
 
@@ -23,4 +23,4 @@
 * [Used Third-Party Libraries](THIRD-PARTY.txt)
 
     <!-- GitHub Pages is not able to list directory contents. Jump back to GitHub directly.  -->
-    For license texts have a look at [third-party-licenses](https://github.com/CoreMedia/content-hub-adapter-filesystem/tree/cmcc-10-2007/docs/third-party-licenses).
+    For license texts have a look at [third-party-licenses](https://github.com/CoreMedia/feedback-hub-adapter-imagga/tree/cmcc-10-2007/docs/third-party-licenses).
