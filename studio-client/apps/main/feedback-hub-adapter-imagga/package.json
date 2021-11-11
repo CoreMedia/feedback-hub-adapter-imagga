@@ -3,10 +3,10 @@
   "version": "1.0.1-SNAPSHOT",
   "private": true,
   "dependencies": {
-    "@coremedia/studio-client.core-icons": "^2107.3.0-4.1.9",
-    "@coremedia/studio-client.ext.ui-components": "^2107.3.0-4.1.9",
-    "@coremedia/studio-client.main.editor-components": "^2107.3.0-4.1.9",
-    "@coremedia/studio-client.main.feedback-hub-editor-components": "^2107.3.0-4.1.9",
+    "@coremedia/studio-client.core-icons": "2110.1.0-pr3",
+    "@coremedia/studio-client.ext.ui-components": "2110.1.0-pr3",
+    "@coremedia/studio-client.main.editor-components": "2110.1.0-pr3",
+    "@coremedia/studio-client.main.feedback-hub-editor-components": "2110.1.0-pr3",
     "@jangaroo/ext-ts": "^1.0.0-alpha",
     "@jangaroo/runtime": "^1.0.0-alpha"
   },
