@@ -11,9 +11,4 @@ module.exports = {
       },
     ],
   },
-  command: {
-    build: {
-      ignoreTypeErrors: true
-    },
-  },
 };
