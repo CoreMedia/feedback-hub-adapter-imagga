@@ -33,7 +33,7 @@ const FeedbackHubImagga_properties: FeedbackHubImagga_properties = {
   imagga_error_LOGIN_ERROR: "Login at Imagga failed. Please provide a valid credentials key in the configuration.",
   imagga_error_GET_TAGS_FROM_UPLOAD_FAILED: "Request for keywords to Imagga failed. Imagga responded with a problem: \"{1}\"",
   imagga_error_ERROR_PROCESSING_JSON: "Imagga is currently unavailable. Please try again later.",
-  imagga_error_NOT_SUPPORTED_FILE_TYPE: "Please upload a valid file type. Imagga supports the file types \"JPG\" or \"PNG\"."
+  imagga_error_NOT_SUPPORTED_FILE_TYPE: "Please upload a valid file type. Imagga supports the file types \"JPG\" or \"PNG\".",
 };
 
 export default FeedbackHubImagga_properties;
