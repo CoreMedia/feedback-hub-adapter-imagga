@@ -1,6 +1,6 @@
 {
   "name": "@coremedia-labs/studio-client.main.feedback-hub-adapter-imagga",
-  "version": "1.0.1-SNAPSHOT",
+  "version": "2.0.0-SNAPSHOT",
   "private": true,
   "dependencies": {
     "@coremedia/studio-client.core-icons": "2110.1.0-pr3",
