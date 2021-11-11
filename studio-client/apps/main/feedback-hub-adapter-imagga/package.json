@@ -1,0 +1,45 @@
+{
+  "name": "@coremedia-labs/studio-client.main.feedback-hub-adapter-imagga",
+  "version": "1.0.1-SNAPSHOT",
+  "private": true,
+  "dependencies": {
+    "@coremedia/studio-client.core-icons": "^2107.3.0-4.1.9",
+    "@coremedia/studio-client.ext.ui-components": "^2107.3.0-4.1.9",
+    "@coremedia/studio-client.main.editor-components": "^2107.3.0-4.1.9",
+    "@coremedia/studio-client.main.feedback-hub-editor-components": "^2107.3.0-4.1.9",
+    "@jangaroo/ext-ts": "^1.0.0-alpha",
+    "@jangaroo/runtime": "^1.0.0-alpha"
+  },
+  "devDependencies": {
+    "@jangaroo/build": "^1.0.0-alpha",
+    "@jangaroo/core": "^1.0.0-alpha",
+    "@jangaroo/publish": "^1.0.0-alpha",
+    "@jangaroo/run": "^1.0.0-alpha",
+    "eslint": "7.27.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "clean": "rimraf ./dist && rimraf ./build",
+    "build": "jangaroo build",
+    "watch": "jangaroo watch",
+    "start": "jangaroo run",
+    "package": "jangaroo package",
+    "publish": "jangaroo publish",
+    "lint": "eslint --fix \"src/**/*.ts\""
+  },
+  "exports": {
+    "./*": {
+      "types": "./src/*.ts",
+      "default": "./dist/src/*.js"
+    }
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "exports": {
+      "./*": {
+        "types": "./src/*.d.ts",
+        "default": "./src/*.js"
+      }
+    }
+  }
+}

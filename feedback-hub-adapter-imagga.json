@@ -1,11 +1,11 @@
 {
-  "$schema": "https://releases.coremedia.com/plugins/plugin-schema-1.0.0.json",
+  "$schema": "https://releases.coremedia.com/plugins/plugin-schema-2.0.0.json",
   "plugins": {
     "studio-server": {
       "file": "studio-server/target/studio-server.feedback-hub-adapter-imagga-${VERSION}.zip"
     },
     "studio-client.main": {
-      "file": "studio-client/apps/main/feedback-hub-adapter-imagga/build/plugin/studio-client.main.feedback-hub-adapter-imagga-${VERSION}.zip"
+      "file": "studio-client/apps/main/feedback-hub-adapter-imagga/build/studio-client.main.feedback-hub-adapter-imagga-${VERSION}.zip"
     }
   }
 }
