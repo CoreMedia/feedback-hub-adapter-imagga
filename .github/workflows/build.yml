@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -45,7 +45,7 @@ jobs:
           npm install -g pnpm@latest
 
       - name: Setup Git
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
         run: |
           git config --global user.name 'coremedia-ci'
           git config --global user.email 'coremedia-ci@coremedia.com'
@@ -59,7 +59,7 @@ jobs:
 
       - name: Set Release Version
         id: set-release-version
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
         env:
           PLUGINS_NEXUS_USER: ${{ secrets.PLUGINS_NEXUS_USER }}
           PLUGINS_NEXUS_PASSWORD: ${{ secrets.PLUGINS_NEXUS_PASSWORD }}
@@ -103,7 +103,7 @@ jobs:
         env:
           VERSION: ${{ steps.output-version.outputs.version }}
           DESCRIPTOR_TEMPLATE: 'feedback-hub-adapter-imagga.json'
-          CREATE_RELEASE: ${{ github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master' }}
+          CREATE_RELEASE: ${{ github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' }}
           RELEASE_TAG: ${{ steps.set-release-version.outputs.tag }}
           URL_PATTERN: 'https://github.com/${GITHUB_REPOSITORY}/releases/download/${RELEASE_TAG}/${REL_FILE}'
         run: |
@@ -126,7 +126,7 @@ jobs:
 
       - name: Set Next Snapshot Version
         id: set-snapshot-version
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
         env:
           PLUGINS_NEXUS_USER: ${{ secrets.PLUGINS_NEXUS_USER }}
           PLUGINS_NEXUS_PASSWORD: ${{ secrets.PLUGINS_NEXUS_PASSWORD }}
@@ -151,7 +151,7 @@ jobs:
           if-no-files-found: error
 
       - name: Upload Release Artifacts
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.set-release-version.outputs.version }}
