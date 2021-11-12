@@ -46,7 +46,7 @@ For convenience reasons, naming proposal of this document is "Keywords Adapter"
 
 #### Site specific adapter configuration
 To enable the feedback-hub-adapter-imagga for a single site, it is necessary to create a _CMSettings_ document located at:
-* _Options/Settings/Content Hub/Connections/_ (relative to the site's root folder)
+* _Options/Settings/Feedback Hub/Connections/_ (relative to the site's root folder)
 For convenience reasons, naming proposal of this document is "Keywords Adapter" (or the third party system name)
 
 

@@ -14,4 +14,4 @@ Suitable for CMCC 2101 and newer.
 
 ### Initial Release 🥳
 
-Basic implementation of the Content Hub API.
+Basic implementation of the Feedback Hub API.
