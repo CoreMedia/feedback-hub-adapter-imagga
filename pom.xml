@@ -3,7 +3,7 @@
 
   <groupId>com.coremedia.labs.plugins</groupId>
   <artifactId>feedback-hub-adapter-imagga</artifactId>
-  <version>2.0.2</version>
+  <version>2.0.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
