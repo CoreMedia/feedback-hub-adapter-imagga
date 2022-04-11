@@ -8,7 +8,6 @@
 
   <modules>
     <module>studio-server</module>
-    <module>plugin-descriptor</module>
   </modules>
 
   <properties>
