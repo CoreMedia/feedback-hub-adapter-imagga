@@ -5,18 +5,18 @@
   "license": "CoreMedia Open Source License",
   "private": true,
   "dependencies": {
-    "@coremedia/studio-client.core-icons": "2110.1.0-pr3",
-    "@coremedia/studio-client.ext.ui-components": "2110.1.0-pr3",
-    "@coremedia/studio-client.main.editor-components": "2110.1.0-pr3",
-    "@coremedia/studio-client.main.feedback-hub-editor-components": "2110.1.0-pr3",
-    "@jangaroo/ext-ts": "^1.0.0-alpha",
-    "@jangaroo/runtime": "^1.0.0-alpha"
+    "@coremedia/studio-client.core-icons": "2110.1.0",
+    "@coremedia/studio-client.ext.ui-components": "2110.1.0",
+    "@coremedia/studio-client.main.editor-components": "2110.1.0",
+    "@coremedia/studio-client.main.feedback-hub-editor-components": "2110.1.0",
+    "@jangaroo/ext-ts": "^1.0.3",
+    "@jangaroo/runtime": "^1.5.0"
   },
   "devDependencies": {
-    "@jangaroo/build": "^1.0.0-alpha",
-    "@jangaroo/core": "^1.0.0-alpha",
-    "@jangaroo/publish": "^1.0.0-alpha",
-    "@jangaroo/run": "^1.0.0-alpha",
+    "@jangaroo/build": "^1.5.0",
+    "@jangaroo/core": "^1.5.0",
+    "@jangaroo/publish": "^1.5.0",
+    "@jangaroo/run": "^1.5.0",
     "eslint": "7.27.0",
     "rimraf": "^3.0.2"
   },
@@ -37,6 +37,7 @@
   },
   "publishConfig": {
     "directory": "dist",
+    "linkDirectory": false,
     "exports": {
       "./*": {
         "types": "./src/*.d.ts",
