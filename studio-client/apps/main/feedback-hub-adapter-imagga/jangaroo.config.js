@@ -1,9 +1,10 @@
-/** @type { import('@jangaroo/core').IJangarooConfig } */
-module.exports = {
+const { jangarooConfig } = require("@jangaroo/core");
+
+module.exports = jangarooConfig({
   type: "code",
-  extName: "com.coremedia.labs.plugins__studio-client.feedback-hub-adapter-imagga",
-  extNamespace: "com.coremedia.labs.plugins.feedbackhub.imagga",
   sencha: {
+    name: "com.coremedia.labs.plugins__studio-client.feedback-hub-adapter-imagga",
+    namespace: "com.coremedia.labs.plugins.feedbackhub.imagga",
     studioPlugins: [
       {
         mainClass: "com.coremedia.labs.plugins.feedbackhub.imagga.ImaggaFeedbackHubStudioPlugin",
@@ -11,4 +12,4 @@ module.exports = {
       },
     ],
   },
-};
+});
