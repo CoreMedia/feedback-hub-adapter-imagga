@@ -10,7 +10,7 @@
     "@coremedia/studio-client.main.editor-components": "2110.1.0",
     "@coremedia/studio-client.main.feedback-hub-editor-components": "2110.1.0",
     "@jangaroo/ext-ts": "^1.0.3",
-    "@jangaroo/runtime": "^1.5.0"
+    "@jangaroo/runtime": "^1.0.0"
   },
   "devDependencies": {
     "@jangaroo/build": "^1.5.0",
