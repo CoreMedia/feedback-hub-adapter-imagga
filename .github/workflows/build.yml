@@ -32,17 +32,25 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: 'pnpm'
+          cache-dependency-path: "studio-client/pnpm-lock.yaml"
 
-      - name: Setup PNPM
+      - name: Setup npm.coremedia.io
         run: |
           NPM_AUTH_TOKEN=$(curl -s -H "Accept: application/json" -H "Content-Type:application/json" -X PUT --data '{"name": "${{ secrets.CM_NPM_USER }}", "password": "${{ secrets.CM_NPM_READ_ONLY_PASSWORD }}"}' https://npm.coremedia.io/-/user/org.couchdb.user:${{ secrets.CM_NPM_USER }} | jq -r .token)
           echo "::add-mask::$NPM_AUTH_TOKEN"
-          echo "NPM_CONFIG_//npm.coremedia.io/:_authToken=$NPM_AUTH_TOKEN" >> $GITHUB_ENV
-          npm install -g pnpm@8.6
+          pnpm config set //npm.coremedia.io/:_authToken=$NPM_AUTH_TOKEN
+          pnpm config set @coremedia:registry=https://npm.coremedia.io
+          pnpm config set @jangaroo:registry=https://npm.coremedia.io
 
       - name: Setup Git
         if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
@@ -144,7 +152,7 @@ jobs:
           echo "version=${snapshot_version}" >> $GITHUB_OUTPUT
 
       - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: Bundle
           path: target/bundle
