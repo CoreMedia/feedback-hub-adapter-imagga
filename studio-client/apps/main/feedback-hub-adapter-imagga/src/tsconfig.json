@@ -5,6 +5,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "../dist/src",
+    "module": "nodenext",
     "moduleResolution": "nodenext",
     "types": [
       "@coremedia/studio-client.main.editor-components",
