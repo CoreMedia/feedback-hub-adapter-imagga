@@ -5,14 +5,14 @@
 
   <groupId>com.coremedia.labs.plugins</groupId>
   <artifactId>studio-server.feedback-hub-adapter-imagga</artifactId>
-  <version>2.0.3-SNAPSHOT</version>
+  <version>2.0.4-SNAPSHOT</version>
 
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <cm.studio-server.core.version>2110.1</cm.studio-server.core.version>
-    <cm.common.core.version>2110.1</cm.common.core.version>
+    <cm.studio-server.core.version>2401.3</cm.studio-server.core.version>
+    <cm.common.core.version>2401.3</cm.common.core.version>
   </properties>
 
   <repositories>
