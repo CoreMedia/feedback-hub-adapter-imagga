@@ -1,6 +1,6 @@
 {
   "name": "@coremedia-labs/studio-client.main.feedback-hub-adapter-imagga",
-  "version": "2.0.4",
+  "version": "2.0.5-SNAPSHOT",
   "author": "CoreMedia GmbH",
   "license": "CoreMedia Open Source License",
   "private": true,
