@@ -5,10 +5,10 @@
   "license": "CoreMedia Open Source License",
   "private": true,
   "dependencies": {
-    "@coremedia/studio-client.core-icons": "2110.1.0",
-    "@coremedia/studio-client.ext.ui-components": "2110.1.0",
-    "@coremedia/studio-client.main.editor-components": "2110.1.0",
-    "@coremedia/studio-client.main.feedback-hub-editor-components": "2110.1.0",
+    "@coremedia/studio-client.core-icons": "2110.2.0",
+    "@coremedia/studio-client.ext.ui-components": "2110.2.0",
+    "@coremedia/studio-client.main.editor-components": "2110.2.0",
+    "@coremedia/studio-client.main.feedback-hub-editor-components": "2110.2.0",
     "@jangaroo/ext-ts": "^1.0.3",
     "@jangaroo/runtime": "^1.0.0"
   },
